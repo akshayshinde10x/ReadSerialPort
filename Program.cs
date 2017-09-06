@@ -34,7 +34,7 @@ namespace SerialRead
             Console.WriteLine("Data Received:");
             Console.WriteLine(indata);
 
-            File.WriteAllText("text_file.json",indata);
+            File.AppendAllText("text_file.txt",indata);
             Thread.Sleep(100);
         }
       
